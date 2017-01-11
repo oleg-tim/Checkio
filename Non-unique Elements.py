@@ -1,7 +1,6 @@
 def checkio(data):
     return [x for x in data if data.count(x) != 1]
 
-
 if __name__ == "__main__":
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert isinstance(checkio([1]), list), "The result must be a list"
