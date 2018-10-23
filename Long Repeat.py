@@ -6,7 +6,16 @@
 Входные данные: Строка.
 Выходные данные: Целое число. 
 '''
+
 def long_repeat(line):
+    win = 0
+    for i in range(len(line), 0, -1):
+        if list(filter(lambda x: line.count(x*i), set(line))):
+            win = i
+            break
+    return win
+
+def long_repeat_2(line):
     maxi = 0
     calc = 0
     current = ''
